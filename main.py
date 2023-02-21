@@ -82,5 +82,6 @@ while is_on:
         if is_resource_sufficient(drink["ingredients"]):
             payment = process_coins()
             if is_Transaction_successful(payment, drink["cost"]):
+                make_coffee(choise, drink["ingredients"])
 
 
